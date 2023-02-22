@@ -1,0 +1,344 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    text-align: center;
+    position: fixed;
+    font-family: 'Glory', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2 {
+    font-family: 'Amarante', cursive;
+}
+
+h1, h2, h3 {
+    margin: 0px;
+    display: block;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#main {
+    width: 95%;
+    max-width: 1300px;
+    overflow: auto;
+}
+
+.chara-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#index-box {
+    width: 100%;
+    top: 0px;
+    height: 100%;
+}
+
+.rowbox {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.box {
+    margin: 10px;
+}
+
+.wol-big {
+    width: 20%;
+    position: relative;
+    display: flex;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.aca-icon {
+    display: flex;
+    width: 100%;
+    align-self: flex-end;
+    margin-bottom: 40px;
+}
+
+.bordered {
+    border-width: 4px;
+    border-style: solid;
+}
+
+.shape {
+    transform: skew(-30deg);
+    width: 80%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.shape > h2, .shape > h3, .shape > a > .tag {
+    transform: skew(30deg);
+}
+
+.aca-label {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+}
+
+a:hover, a:focus {
+    letter-spacing: 2px;
+}
+
+.text-col {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    overflow: visible;
+}
+
+.portrait {
+    position: relative;
+    width: 70%;
+    border-radius: 50%;
+    margin: 10px;
+}
+  
+.portrait:after, .ship-link:after, .prose-link:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+  
+#inner-portrait {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    top: -4px;
+    left: -4px;
+    cursor: pointer;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    top: -40px;
+}
+
+#stats {
+    position: relative;
+    width: 70%;
+    padding: 30px 10px;
+    text-align: left;
+}
+
+.title-card {
+    position: absolute;
+    top: -40px;
+    left: -30px;
+    overflow: visible;
+    text-align: center;
+    display: block;
+}
+
+#lodestone {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 60%;
+}
+
+#jobs {
+    width: 20%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.job {
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.post {
+    position: relative;
+    padding: 10px;
+    padding-bottom: 30px;
+    width: 95%;
+    margin-bottom: 30px;
+    display: inline-block;
+    max-width: 500px;
+    text-align: left;
+}
+
+.posted-image {
+    width: 100%;
+    cursor: pointer;
+}
+
+.retainer-pic, .ship-link {
+    float: left;
+    width: 30%;
+    margin-right: 10px;
+    margin-top: 16px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.prose-link {
+    border-radius: 50%;
+    width: 30%;
+    margin: 5px;
+    position: relative;
+}
+
+.prose-pic, .ship-pic {
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.prose-pic:hover, .prose-link:focus > .prose-pic, .ship-pic:hover, .ship-link:focus > .ship-pic {
+    opacity: 0.4;
+}
+
+.prose-row {
+    margin-bottom: 0px;
+    margin-top: 5px;
+    flex-flow: row nowrap;
+}
+
+.ship-text {
+    text-align: left;
+}
+
+#tag-box {
+    position: relative;
+    padding: 10px;
+    padding-top: 30px;
+    width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.post-footer {
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.tag {
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+a:hover > .tag, a:focus > .tag {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.fixed {
+    position: sticky;
+    top: 30px;
+    justify-content: center;
+}
+
+.img-col {
+    width: 30%;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+#side-img {
+    width: 95%;
+    max-height: 120%;
+    object-fit: contain;
+    position: relative;
+    bottom: -25%;
+}
+
+#lightbox {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+#lit-img {
+    max-width: 85%;
+    max-height: 85%;
+    z-index: 4;
+}
+
+#close {
+    position: fixed;
+    z-index: 5;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+    #main {
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .text-col, .img-col {
+        width: 90%;
+    }
+
+    .fixed {
+        position: relative;
+        top: 0px;
+    }
+
+    body {
+        background-size: auto 100vh;
+    }
+}
+
+.hidden {
+    display: none !important;
+}

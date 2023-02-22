@@ -1,0 +1,41 @@
+body {
+    background-image: url("../img/natsuki-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-color: #753638;
+    color: #F31A50;
+}
+
+.box {
+    background-color: #321110;
+}
+
+.bordered {
+    border-image: linear-gradient(120deg, #8E7061, #E7D3AB, #8E7061) 4 round;
+    border-color: #8E7061;
+}
+
+a {
+    color: #F31A50;
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:hover > .box, a:focus > .box, a.box:hover, a.box:focus, #close:hover, #close:focus {
+    background-color: #F31A50;
+    color: #321110;
+    outline: 3px double #E7D3AB;
+}
+
+.posted-image:hover, .posted-image:focus, #inner-portrait:hover, #inner-portrait:focus {
+    outline: 3px double #E7D3AB;
+    opacity: 0.4;
+}
+
+.bordered-img {
+    border: 4px solid transparent; /*2*/
+    background: linear-gradient(120deg, #8E7061, #E7D3AB, #8E7061) border-box; /*3*/
+}
+
+#lightbox {
+    background-color: #321110cc;
+}
